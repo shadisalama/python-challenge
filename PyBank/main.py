@@ -2,7 +2,6 @@
 import csv, os
 
 file_to_open = os.path.join("Resources", "budget_data.csv")
-file_to_export = os.path.join("Exported", "budget_analysis.txt")
 
 total_months = 0
 total_net = 0
@@ -53,5 +52,4 @@ output = (
 
 print(output)
 
-with open(file_to_export, "w") as txt_file:
-    txt_file.write(output)
+
