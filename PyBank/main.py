@@ -9,8 +9,9 @@ total_net = 0
 
 month_of_change = []
 net_change_list = []
+
+greatest_decrease = ["", 10000000000000000]
 greatest_increase = ["", 0]
-greatest_decrease = ["", 9999999999999999999]
 
 with open(file_to_open) as financial_data:
     reader = csv.reader(financial_data)
